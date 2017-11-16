@@ -3,16 +3,17 @@
 <%= form_for :post , url: home_path do |f| %>
     
 <div class="control-group">
+<div class="container-fluid">
       <% @categories.each do |cat| %>
-        <div class="well">
+        <div class="well btn-info">
 
         
-            <h3> <%= link_to cat.category, product_path(cat.category) %></h3>
+            <h5> <%= link_to cat.category, product_path(cat.category) %></h5>
             
             
             </div>
         <% end %>
-
+</div>
 </div>
 
 
