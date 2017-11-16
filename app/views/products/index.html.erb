@@ -1,10 +1,10 @@
-<h3> <%= @Title %> </h3>
+<h4> <%= @Title %> </h4>
 
 <%= form_for :post , url: home_path do |f| %>
    
     <% @products.each do |product| %>
         <div class="well">
-            <h4> Product :  <%= product.product_name %> </h4>
+            <h5> Product :  <%= product.product_name %> </h5>
             <p>    Category :  <%= product.category %> </p>
             <p>    Price : $  <%= product.price %> </p>
             </div>

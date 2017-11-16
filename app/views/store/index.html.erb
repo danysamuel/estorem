@@ -1,4 +1,4 @@
-<h3 class="display-3"> <%= @Title %> </h3>
+<h4> <%= @Title %> </h4>
 
 <%= form_for :post , url: home_path do |f| %>
     
@@ -7,7 +7,7 @@
         <div class="well">
 
         
-            <h2> <%= link_to cat.category, product_path(cat.category) %></h2>
+            <h3> <%= link_to cat.category, product_path(cat.category) %></h3>
             
             
             </div>
