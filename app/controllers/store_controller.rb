@@ -1,10 +1,13 @@
 class StoreController < ApplicationController
 
+   
     def index
-        @Title='Index'
-
-        @posts = Store.all
         
-    end
-
+                @Title='Products Range'
+                
+                @products=Product.all
+        
+                @categories=Product.select('distinct(category)')
+            end
+        
 end
