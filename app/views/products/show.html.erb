@@ -3,7 +3,7 @@
 <%= form_for :post , url: home_path do |f| %>
    
     <% @products.each do |product| %>
-        <div class="btn-block well">
+        <div class="well">
             <h5> Product :  <%= product.product_name %> </h5>
             <p>    Category :  <%= product.category %> </p>
             <p>    Price : $  <%= product.price %> </p>
