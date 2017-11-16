@@ -1,0 +1,9 @@
+<h1> <%= @Title %> </h1>
+
+<% @posts.each do |post| %>
+    
+   
+        <h3> <%= post.product_name %> </h3>
+        <p> <%= post.product_desc %> </p>
+       
+    <% end %>
