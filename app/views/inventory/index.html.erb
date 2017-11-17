@@ -1,0 +1,33 @@
+
+<%= link_to "Sync Data", syncdata_inventory_index_path, :class => 'btn 
+btn-info' %>
+
+<div class="pull-right">
+  <p > Total : <%= @count %> </p>
+</div>
+    <table class="table table-sm table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Product</th>
+        <th scope="col">Category</th>
+        <th scope="col">Price(AUD)</th>
+      </tr>
+    </thead>
+    <tbody>
+    <% @products.each do |product| %>
+          
+           <tr>
+             <th scope="row"><%= product.productid %></th>
+             <td><%= product.product_name %></td>
+             <td><%= product.category %></td>
+             <td><%= product.price %></td>
+           </tr>
+           
+     <% end %>
+     </tbody>
+     </table>
+
+     <%= form_for :post , url: home_path do |f| %>
+ 
+ <% end %>

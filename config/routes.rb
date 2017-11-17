@@ -4,5 +4,11 @@ Rails.application.routes.draw do
   root 'store#index', as: 'home'
 
   resources :products
+
+   resources :inventory do
+    collection do
+      get :syncdata
+    end
+  end
   
 end
